@@ -1,0 +1,16 @@
+ <nav class="nav">
+      <img src="https://img.freepik.com/free-vector/fruit-label-sticker_17005-1006.jpg?t=st=1738093384~exp=1738096984~hmac=4d93bf7679d1beda09dd0995363f4bc7fba9a6d91a693d847096612375969c4c&w=740" alt="">
+      <span class="brand"><sup>f</sup>Fruits Market</span>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart"><i class="bi bi-cart"></i> Cart</a></li>
+        @if(Model.authenticated){
+            <li><a href="/logout">Logout</a></li>
+        }
+        else
+        {
+            <li><a href="/register">Register</a></li> 
+            <li><a href="/login">Login</a></li> 
+        }
+      </ul>
+</nav>
